@@ -1,4 +1,4 @@
-"---BASIC SETTINGS
+" BASIC SETTINGS ----------------------------------------------------------- {{{
 
 " Disable compatibility with vi
 set nocompatible
@@ -62,3 +62,38 @@ set hlsearch
 
 " Set the commands history save
 set history=100
+
+" Enable auto completion menu after pressing TAB
+set wildmenu
+
+" Make wildmenu behave similar ro Bash 
+set wildmode=list:longest
+
+" Wildmenu will ignore files with these extensions
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" }}}
+
+" PLUGINS ------------------------------------------------------------------ {{{
+" pluging code
+" }}}
+" 
+" MAPPINGS ----------------------------------------------------------------- {{{
+" mappings code
+" }}}
+"
+" VIMSCRIPT ---------------------------------------------------------------- {{{
+" 
+" This will enable code folding
+" Use the marker method of folding
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+"
+" More vimscripts code here
+" }}}
+"
+" STATUS LINE -------------------------------------------------------------- {{{
+" status bar code
+" }}}
